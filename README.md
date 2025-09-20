@@ -32,17 +32,6 @@ This system is designed to simplify clinic operations such as managing users, me
 
 ---
 
-## System Menu Overview
-
-- **Dashboard** → Overview of clinic statistics and activities  
-- **User** → Manage Admin, Doctor, and Patient  
-- **Obat (Medicine)** → Manage medicine inventory  
-- **Poli** → Manage clinic departments  
-- **Pendaftaran (Registration)** → Patient registration for clinic visits  
-- **Resep (Prescription)** → Manage medical prescriptions  
-
----
-
 ## Tech Stack
 
 - PHP Native
