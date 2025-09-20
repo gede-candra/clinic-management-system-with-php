@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.sampul {
+  background-image: url('../img/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.kontainer {
+  background: linear-gradient(to top, white, rgba(223, 223, 223, 0.7));
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 50px 30px;
+}
+
+.kontainer .userlogo {
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.kontainer h1 {
+  font-size: 22px;
+  text-align: center;
+  padding: 20px 0 20px;
+}
+
+.kontainer form label {
+  font-weight: bold;
+}
+
+.kontainer form input {
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+}
+
+.kontainer form input:focus {
+  border-bottom: 2px solid;
+}
+
+.kontainer form button {
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  margin-top: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.kontainer form button:hover {
+  background-color: rgb(255, 196, 0);
+  font-weight: bold;
+}
+
+.kontainer form .fitur {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert {
+  margin-top: 30px;
+  padding: 8px 5px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.alert-gagal {
+  background-color: pink;
+  color: rgb(173, 53, 73);
+}
+
+.alert-berhasil {
+  background-color: lightgreen;
+  color: green;
+}
+
+/* large resolution */
+@media (min-width: 1024px) {
+  .sampul {
+    position: fixed;
+  }
+
+  .kontainer {
+    width: 800px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .kontainer .userlogo {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+
+  .kontainer form {
+    display: grid;
+    grid-template-areas: "input1 input2 input3""tombol tombol tombol";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+
+  .kontainer form .col-input:nth-child(1) {
+    grid-area: input1;
+  }
+
+  .kontainer form .col-input:nth-child(2) {
+    grid-area: input2;
+  }
+
+  .kontainer form .col-input:nth-child(3) {
+    grid-area: input3;
+  }
+
+  .kontainer form .col-input:nth-child(4) {
+    grid-area: tombol;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20%;
+  }
+}

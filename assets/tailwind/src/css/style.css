@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* TABEL KOMPONEN  */
+.tabel-1 {
+  @apply w-full text-sm text-left;
+}
+
+.tabel-1 thead tr th {
+  @apply p-2 font-semibold whitespace-nowrap;
+}
+
+.tabel-1 tbody tr:nth-child(even) {
+  @apply bg-gray-100;
+}
+
+.tabel-1 tbody tr td {
+  @apply p-2 whitespace-nowrap;
+}
+
+
+/* CARD */
+.card-1 {
+  @apply relative flex shadow-md rounded-md;
+}
+
+.card-1 div:nth-child(1) {
+  @apply flex flex-col justify-evenly h-full w-full pr-20 text-left pl-6;
+}
+
+.card-1 div:nth-child(1) h2 {
+  @apply text-2xl font-bold;
+  font-family: tahoma;
+}
+
+.card-1 div:nth-child(1) p {
+  @apply text-sm font-mono tracking-wide;
+}
+
+.card-1 div:nth-child(2) {
+  @apply absolute text-3xl w-full h-full pr-6 text-right;
+}

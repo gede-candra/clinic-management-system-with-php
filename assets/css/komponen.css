@@ -1,0 +1,24 @@
+.tabel-2 {
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: left;
+}
+
+.tabel-2 thead {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.tabel-2 thead tr th {
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+
+.tabel-2 tbody tr td {
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+
+.tabel-2 tbody tr:nth-child(odd) {
+  background-color: rgba(243, 244, 246, 0.8);
+}

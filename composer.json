@@ -1,0 +1,19 @@
+{
+    "name": "gede-candra/clinic-management-system-with-php",
+    "description": "Clinic Management System built with PHP Native",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "5.6.x-dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Candra Wijaya",
+            "email": "cocolatefire@protonmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "scripts": {
+        "serve": "php -S localhost:8000 -t ."
+    }
+}

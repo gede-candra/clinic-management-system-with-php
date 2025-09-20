@@ -1,0 +1,27 @@
+# Dependency folder
+/vendor/
+/composer.lock
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor files
+/.idea/
+/.vscode/
+*.swp
+*.swo
+
+# OS generated files
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Logs & cache
+*.log
+/cache/
+/tmp/
+/logs/
+
+# Environment files
+.env
